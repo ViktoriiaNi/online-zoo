@@ -1,0 +1,45 @@
+.body {
+  width: 1600px;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header {
+  height: 90px;
+  background-color: black;
+  margin: 0;
+}
+
+.main {
+  height: calc(100% - 90px);
+}
+
+.section1_ft {
+  height: 690px;
+  border: 1px solid red;
+}
+
+.section2 {
+  margin: 140px 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-box {
+  width: 1161px;
+  height: 403px;
+  border: 1px solid red;
+}
+
+.section3_animals_card {
+  margin: 140px 220px;
+}
+
+.footer {
+  height: 443px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
