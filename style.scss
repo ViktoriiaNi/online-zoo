@@ -1,40 +1,60 @@
-$sections_margin: 140px 220px;
+$sections_margin_rl: 0 220px;
 
 @mixin position-center {
     display: flex;
     justify-content: center;  
 }
 
-.body {
-    width: 1600px;
-    background-color: antiquewhite;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    //@include position-center()
+@mixin foto-card {
+    overflow: hidden;
+    width: 366px;
+    height: 424px;
+    border: 1px solid #FA6F32;
+    border-radius: 5px;
+}
 
+@mixin buttons {
+    display: flex;
+    justify-content: center;
+    width: 298px;
+    height: 54px;
+    background-color: #FE9013;
+    color: white;  
+    border: 0; 
+}
+
+.body {
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    width: 1600px;
+    margin: auto;
 }
 
 .header {
-    height: 90px;
+    height: 80px;
     background-color: black;
     margin: 0;
 }
 
 .main {
     height: calc(100% - 90px);
+    overflow: hidden;
 }
 
 .section1_ft {
     height: 690px;
-    border: 1px solid red;
+}
+
+.panda {
+    position: relative;
+    top: -80px;
+
 }
 
 .section2 {
-    margin: $sections_margin;
-    @include position-center()
-
-
+    margin: $sections_margin_rl;
+    @include position-center();
+    margin: 150px 0 180PX;
 }
 
 .section-box {
@@ -43,9 +63,24 @@ $sections_margin: 140px 220px;
     border: 1px solid red;
 }
 
-.section3_animals_card {
-    margin: $sections_margin;
+.section3-animals-card {
+    margin: $sections_margin_rl;
+    width: 1158px;
+    height: 872px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
 
+.animals-card {
+    @include foto-card();
+}
+
+.button1 {
+    @include buttons();
+    margin: 80px 0 100px;
+    padding: 16px 0;;
 }
 
 .footer {
