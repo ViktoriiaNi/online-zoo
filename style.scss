@@ -1,8 +1,8 @@
-$sections_margin_rl: 0 220px;
-
-@mixin position-center {
-    display: flex;
-    justify-content: center;  
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @mixin foto-card {
@@ -10,7 +10,20 @@ $sections_margin_rl: 0 220px;
     width: 366px;
     height: 424px;
     border: 1px solid #FA6F32;
+    border-radius: 5px;}
+
+@mixin widjets {
+    width: 168px;
+    height: 244px;
+}
+
+@mixin widjets-inner-block {
+    width: 168px;
+    height: 168px;
     border-radius: 5px;
+    border: #FA6F32 solid 1px;
+    background-color: white;
+
 }
 
 @mixin buttons {
@@ -21,50 +34,104 @@ $sections_margin_rl: 0 220px;
     background-color: #FE9013;
     color: white;  
     border: 0; 
+    margin: auto;
+    border-radius: 25px;
 }
 
 .body {
+    font-family: "Roboto", sans-serif;;
     box-sizing: border-box;
-    background-color: antiquewhite;
-    width: 1600px;
-    margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .header {
     height: 80px;
     background-color: black;
-    margin: 0;
+    margin: auto;
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: calc(100% - 90px);
     overflow: hidden;
+    margin: auto;
 }
 
 .section1_ft {
+    margin: auto;
     height: 690px;
+
 }
 
 .panda {
+    margin: auto;
     position: relative;
     top: -80px;
-
 }
 
 .section2 {
-    margin: $sections_margin_rl;
-    @include position-center();
-    margin: 150px 0 180PX;
+    margin: 150px auto 180px;
 }
+
 
 .section-box {
     width: 1161px;
     height: 403px;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-text {
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-h2 {
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+.text16 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 0 35px;
+}
+
+.text24 {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0 0 10px;
+}
+
+.text16-140 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    margin: 0;
+}
+
+.flower-photo1{
+    position: absolute;
+    top: 792px;
+    left: 1495px;
 }
 
 .section3-animals-card {
-    margin: $sections_margin_rl;
+    margin: auto;
     width: 1158px;
     height: 872px;
     display: flex;
@@ -79,8 +146,48 @@ $sections_margin_rl: 0 220px;
 
 .button1 {
     @include buttons();
-    margin: 80px 0 100px;
+    margin: 80px auto 100px;
     padding: 16px 0;;
+}
+
+.pick-and-feeed {
+    height: 1004px;
+    background-color: #fed290;
+
+}
+
+.inner-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 69px auto;
+    height: 835px;
+    width: 1160px;
+    border-radius: 20px;
+    background-color: #FDFDFF;
+}
+
+.widjets-container{
+    margin: auto;
+    width: 760px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.widjet {
+    @include widjets();
+    
+}
+
+.widjet-inner-block {
+    @include widjets-inner-block()
+}
+
+.button2 {
+    @include buttons();
+    margin: auto;
+
 }
 
 .footer {
