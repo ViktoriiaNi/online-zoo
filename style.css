@@ -112,6 +112,23 @@
   border-radius: 5px;
 }
 
+.button-round-box {
+  position: relative;
+  bottom: 470px;
+  width: 1320px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.button-round {
+  width: 62px;
+  height: 62px;
+  background-color: #FA6F32;
+  border-radius: 50px;
+}
+
 .button1 {
   display: flex;
   justify-content: center;
@@ -122,13 +139,63 @@
   border: 0;
   margin: auto;
   border-radius: 25px;
-  margin: 80px auto 100px;
+  margin: 18px auto 100px;
   padding: 16px 0;
 }
 
 .pick-and-feeed {
   height: 1004px;
   background-color: #fed290;
+}
+
+.text-pick-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 10px auto;
+  padding-left: 40px;
+}
+
+.textH-pick-and-feed {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57, 6px;
+  color: #FA6F32;
+  margin: 40px auto 20px;
+}
+
+.text2-pick-and-feed {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20, 8px;
+  margin: 0 0 30px;
+}
+
+.text3-pick-and-feed {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20, 8px;
+  margin-bottom: 2px;
+}
+
+.text4-pick-and-feed {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20, 8px;
+  margin: 5px 0 0;
+}
+
+.text-how-it-works {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46, 8px;
+  margin: 55px auto 5px;
 }
 
 .inner-block {
@@ -143,7 +210,7 @@
 }
 
 .widjets-container {
-  margin: auto;
+  margin: 39px auto 0;
   width: 760px;
   display: flex;
   justify-content: center;
@@ -153,6 +220,10 @@
 .widjet {
   width: 168px;
   height: 244px;
+}
+
+.widjet-inner-text {
+  margin-top: 25px;
 }
 
 .widjet-inner-block {
@@ -174,6 +245,37 @@
   margin: auto;
   border-radius: 25px;
   margin: auto;
+}
+
+.section5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-section5 {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46, 8px;
+  margin: auto;
+  margin-top: 140px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: auto;
+}
+
+.testimonials-box {
+  border: solid 1px red;
+  width: 268px;
+  height: 391px;
+  border-radius: 20px;
+  margin-top: 50px;
 }
 
 .footer {
