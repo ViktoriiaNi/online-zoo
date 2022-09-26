@@ -4,106 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online zoo</title>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="body">
-    <div class="header">header </div>
-    <div class="main">
-        <div class="section1_ft">
-            <img class="panda" src="./assets/Giant Panda.png" alt="Giant Panda">
-        </div>
-        <div class="section2">
-            <div class="section-box">
-                <img src="./assets/bamboo-cap.png" alt="bamboo-cap">
-                <div class="section-text">
-                    <h2 class="text-h2">The Backstage of the Wilderness World.</h2>
-                    <p class="text16">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
-                    <p class="text24">How it works</p>
-                    <p class="text16-140">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__inner_left">
+                    <a class="logo"href="./" >
+                        <h1 class="logo__text">PetStory online</h1>
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Map</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Zoos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Donate</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Contactus</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </div>
-        <div class="section3-animals-card">
-            <div class="animals-card">
-                <img src="./assets/Rectangle 5.png" alt="pandas">
-            </div>
-            <div class="animals-card">
-                <img src="./assets/Rectangle 5 (1).png" alt="eagles">
-            </div>
-            <div class="animals-card">
-                <img src="./assets/Rectangle 5 (2).png" alt="gorillas">
-            </div>
-            <div class="animals-card">
-                <img src="./assets/Rectangle 5 (3).png" alt="two-toed sloth">
-            </div>
-            <div class="animals-card">
-                <img src="./assets/Rectangle 5 (4).png" alt="sheetahs">
-            </div>
-            <div class="animals-card">
-                <img src="./assets/Rectangle 5 (5).png" alt="penguins">
-            </div>
-        </div>
-        <div class="button-round-box">
-            <div class="button-round"></div>
-            <div class="button-round"></div>
-        </div>
-        <button class="button1">CHOOSE YOUR FAVOURITE</button>
-        <div class="pick-and-feeed">
-            <div class="inner-block">
-                <p class="textH-pick-and-feed">Pick and feed a friend</p>
-                <div class="text-pick-box">
-                    <p class="text2-pick-and-feed">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
-                    <p class="text3-pick-and-feed">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-                    <p class="text4-pick-and-feed">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider</p>
-                    <p class="text4-pick-and-feed">a gift to our Emergency Support Fund .</p>
-                </div>
-                <h3 class="text-how-it-works">How it works</h3>
 
-                <div class="widjets-container">
-                    <div class="widjet">
-                        <div class="widjet-inner-block"></div>
-                        <div class="widjet-inner-text">Pay with card</div>
+ 
+                <a href="" class="link">Designed by ©</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="section-panda">
+                <img src="assets/Giant Panda.png" alt="Giant Panda" class="panda">
+                <div class="panda__inner">
+                    <div class="panda__circle"></div>
+                    <div class="panda__text__container">
+                        <p class="panda-text">WATCH YOUR</p>
+                        <p class="panda-text-yellow">FAVORITE</p>
+                        <p class="panda-text">ANIMAL ONLINE</p>
                     </div>
-                    <div class="widjet">
-                        <div class="widjet-inner-block"></div>
-                        <div class="widjet-inner-text">Payment goes to the zoo</div>
-                    </div>
-                    <div class="widjet">
-                        <div class="widjet-inner-block"></div>
-                        <div class="widjet-inner-text">Your favourite animal gets delisious dish</div>
-                    </div>
-                 </div>
-                 <button class="button2">FEED A FRIEND NOW</button>
-                 
-
+                    <button class="panda__button">
+                        <p class="panda__button-text">watch online</p>
+                    </button>
+                </div>
             </div>
-
-
-             </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-backstage">
+                <img class="bamboo-cap" src="assets/bamboo-cap.png" alt="bamboo cap">
+                <div class="backstage-text__container">
+                    <p class="backstage__title">The Backstage of the Wilderness World.</p>
+                    <p class="backstage__text">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
+                    <p class="backstage__howitworks">How it works</p>
+                    <p class="backstage__text-hiw">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</p>
+                </div>
+                <img class="flower-backstage" src="assets/flower_foto1.png" alt="" class="flower-backstage">
+            </div>
+        </div>
+        <div class="container pets__container">
+            <div class="pets__inner">
+                <div class="pets__card">
+                    <img class="card" src="assets/Rectangle 5.png" alt="GIANT PANDAS" class="card">
+                    <div class="pets__card-about">
+                        <div class="pets__text-container">
+                            <p class="pets__card-name">GIANT PANDAS</p>
+                            <p class="pets__card-location">Native to Southwest China</p>
+                        </div>
+                        <svg class="pets__food-ico"></svg>
+                    </div>
+                </div>
+                <div class="pets__card">
+                    <img class="card" src="assets/Rectangle 5 (1).png" alt="EAGLES" class="card">
+                    <div class="pets__card-about">
+                        <div class="pets__text-container">
+                            <p class="pets__card-name">EAGLES</p>
+                            <p class="pets__card-location">Native to South America</p>
+                        </div>
+                        <svg class="pets__food-ico"></svg>
+                    </div>
+                </div>
+                <div class="pets__card">
+                    <img class="card" src="assets/Rectangle 5 (2).png" alt="GORILLAS" class="card">
+                    <div class="pets__card-about">
+                        <div class="pets__text-container">
+                            <p class="pets__card-name">GORILLAS</p>
+                            <p class="pets__card-location">Native to Congo</p>
+                        </div>
+                        <svg class="pets__food-ico"></svg>
+                    </div>
+                </div>
+                <div class="pets__card">
+                    <img class="card" src="assets/Rectangle 5 (3).png" alt="Two-toed Sloth" class="card">
+                    <div class="pets__card-about">
+                        <div class="pets__text-container">
+                            <p class="pets__card-name">TWO-TOED SLOTH</p>
+                            <p class="pets__card-location">Mesoamerica, South America</p>
+                        </div>
+                        <svg class="pets__food-ico"></svg>
+                    </div>
+                </div>
+                <div class="pets__card">
+                    <img class="card" src="assets/Rectangle 5 (4).png" alt="CHEETAHS" class="card">
+                    <div class="pets__card-about">
+                        <div class="pets__text-container">
+                            <p class="pets__card-name">CHEETAHS</p>
+                            <p class="pets__card-location">Native to Africa</p>
+                        </div>
+                        <svg class="pets__food-ico"></svg>
+                    </div>
+                </div>
+                <div class="pets__card">
+                    <img class="card" src="assets/Rectangle 5 (5).png" alt="PENGUINS" class="card">
+                    <div class="pets__card-about">
+                        <div class="pets__text-container">
+                            <p class="pets__card-name">PENGUINS</p>
+                            <p class="pets__card-location">Native to Antarctica</p>
+                        </div>
+                        <svg class="pets__food-ico"></svg>
+                    </div>
+                </div>
+                <button class="button">
+                    <p class="button__text">choose your favorite</p>
+                </button>
+                <img class="pets-palm" src="assets/palm_foto.png" alt="palm" >
+                <img class="strelitzia" src="assets/strelitzia 1.png" alt="strelitzia" >     
+            </div>
+            <div class="button-round__container">
+                <button class="button-round">
+                    <svg class="button-arrow"></svg>
+                </button>  
+                <button class="button-round">
+                    <svg class="button-arrow"></svg>
+                </button>    
+            </div> 
 
         </div>
-        <div class="section5">
-            <h3 class="text-section5">Testimonials</h3>
-            <div class="testimonials-container">
-                <div class="testimonials-box">
-                    
-                </div>
-                <div class="testimonials-box">
-                    
-                </div>
-                <div class="testimonials-box">
-                    
-                </div>
-                <div class="testimonials-box">
-                    
+        <div class="pickAndFeed">
+            <div class="container">
+                <div class="pickAndFeed__inner">
+                    <div class="pickAndFeed__text-container">
+                        <p class="pickAndFeed__title">Pick and feed a friend</p>
+                        <div class="pickAndFedd__transcription">
+                            <p class="pickAndFeed__statement">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                            <p class="pickAndFeed__text-first">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+                            <p class="pickAndFeed__text-second">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider </p>
+                            <p class="pickAndFeed__text-second">a gift to our Emergency Support Fund . </p>
+                        </div>   
+                    </div>
+                    <div class="pickAndFeed__info">
+                        <p class="info__howItWorks">How it works</p>
+                        <div class="info__card-container">
+                            <div class="info__card">
+                                <div class="info__picture">
+                                    <svg class="info__picture-ico"></svg>
+                                </div>
+                                <p class="info__text">Pay with card</p>
+                            </div>
+                            <svg class="ingo__arrow"></svg>
+                            <div class="info__card">
+                                <div class="info__picture">
+                                    <svg class="info__picture-ico"></svg>
+                                </div>
+                                <p class="info__text">Payment goes to the zoo</p>
+                            </div>
+                            <svg class="ingo__arrow"></svg>
+                            <div class="info__card">
+                                <div class="info__picture">
+                                    <svg class="info__picture-ico"></svg>
+                                </div>
+                                <p class="info__text">Your favourite animal gets delicious dish</p>
+                            </div>
+                        </div>
+                        <button class="button" style="margin-top: 45px;">
+                            <p class="button__text">Feed a friend now</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-        <img src="./assets/flower_foto1.png" alt="flower-photo1" class="flower-photo1">
+            
+        </div>
+            
 
 
-    </div>
-    <div class="footer">footer</div>
+
+    </main>
     
 </body>
 </html>

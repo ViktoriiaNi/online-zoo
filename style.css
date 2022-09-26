@@ -1,284 +1,441 @@
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+*,
+* ::before,
+*::after {
+    box-sizing: border-box;
 }
-.body {
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto700;
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
 }
 
 .header {
-  height: 80px;
-  background-color: black;
-  margin: auto;
+    height: 80px;
+    background-color: black;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1181px;
+    padding: 0 10px;
+}
+
+.header__inner{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+}
+
+.header__inner_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 5px;
+}
+
+.logo__text{
+    font-size: 19.01px;
+    line-height: 22.82px;
+    width: 82px;
+    height: 52px;
+    margin: auto;
+    border: solid 1px white;
+    border-radius: 2px;
+    padding: 3.55px 4.75px;
+    text-align: center;
+}
+
+.menu__list {
+    display: flex;
+    padding: 0;
+}
+
+.menu__item:hover {
+    color: #F9804B;
+}
+
+.menu__item {
+    padding-left: 58.6px;
+}
+
+.menu__link {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #F9804B;
+}
+.link {
+    padding-right: 1px;
+}
+
+.section-panda {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: calc(100% - 90px);
-  overflow: hidden;
-  margin: auto;
-}
-
-.section1_ft {
-  margin: auto;
-  height: 690px;
+    overflow: hidden;
 }
 
 .panda {
-  margin: auto;
-  position: relative;
-  top: -80px;
+    position: relative;
+    bottom: 80px;
 }
 
-.section2 {
-  margin: 150px auto 180px;
+.panda__inner {
+    position: absolute;
+    bottom: 222px;
+    left: 585px;
 }
 
-.section-box {
-  width: 1161px;
-  height: 403px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.panda__circle {
+    position: absolute;
+    bottom: 80px;
+    width: 465px;
+    height: 465px;
+    border-radius: 400px;
+    background-color: #F9804B;
 }
 
-.section-text {
-  width: 465px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.panda__text__container{
+    width: 500.31px;
+    position: relative;
+    bottom: 20px;
+    left: 72px;
 }
 
-.text-h2 {
-  font-family: "Roboto";
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 120%;
-  margin: 0;
+.panda-text{
+    font-family: Roboto700;
+    font-weight: 700;
+    line-height: 79.87px;
+    font-size: 106.5px;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
 
-.text16 {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 120%;
-  margin: 0 0 35px;
+.panda-text-yellow{
+    font-family: Roboto700;
+    font-weight: 700;
+    line-height: 79.87px;
+    font-size: 106.5px;
+    text-align: center;
+    color: yellow;
+    margin: 0;
 }
 
-.text24 {
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 130%;
-  margin: 0 0 10px;
+.panda__button {
+    position: relative;
+    top: 45px;
+    left: 175px;
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    background-color: #F9804B;
+    border: none;
+    cursor: pointer;
 }
 
-.text16-140 {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 135%;
-  margin: 0;
+.panda__button:hover{
+    background-color: #E47209;
 }
 
-.flower-photo1 {
-  position: absolute;
-  top: 792px;
-  left: 1495px;
+.panda__button-text {
+    font-size: 500;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
 }
 
-.section3-animals-card {
-  margin: auto;
-  width: 1158px;
-  height: 872px;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-wrap: wrap;
+.section-backstage{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 640px;
 }
 
-.animals-card {
-  overflow: hidden;
-  width: 366px;
-  height: 424px;
-  border: 1px solid #FA6F32;
-  border-radius: 5px;
+.bamboo-cap{
+    width: 609px;
+    height: 403px;
 }
 
-.button-round-box {
-  position: relative;
-  bottom: 470px;
-  width: 1320px;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  justify-content: space-between;
+.backstage-text__container{
+    flex-basis: 465px;
+    color: #333B41;
 }
 
-.button-round {
-  width: 62px;
-  height: 62px;
-  background-color: #FA6F32;
-  border-radius: 50px;
+.backstage__title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    margin: 0 0 20px;
 }
 
-.button1 {
-  display: flex;
-  justify-content: center;
-  width: 298px;
-  height: 54px;
-  background-color: #FE9013;
-  color: white;
-  border: 0;
-  margin: auto;
-  border-radius: 25px;
-  margin: 18px auto 100px;
-  padding: 16px 0;
+.backstage__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 0 0 54px;
+
 }
 
-.pick-and-feeed {
-  height: 1004px;
-  background-color: #fed290;
+.backstage__howitworks{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0 0 34px;
 }
 
-.text-pick-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1000px;
-  margin: 10px auto;
-  padding-left: 40px;
+.backstage__text-hiw{
+    font-size: 16px;
+    line-height: 140%;
 }
 
-.textH-pick-and-feed {
-  font-family: "Roboto";
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 57, 6px;
-  color: #FA6F32;
-  margin: 40px auto 20px;
+.flower-backstage{
+    position: absolute;
+    left: 1175px;
+    bottom: 100px;
 }
 
-.text2-pick-and-feed {
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 20, 8px;
-  margin: 0 0 30px;
+.pets__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1158px;
+    height: 875px;
 }
 
-.text3-pick-and-feed {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20, 8px;
-  margin-bottom: 2px;
+.pets__card{
+    width: 366px;
+    height: 426px;
+    border: solid #FA6F32 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.text4-pick-and-feed {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20, 8px;
-  margin: 5px 0 0;
+
+.pets__card-about{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13px;
 }
 
-.text-how-it-works {
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 46, 8px;
-  margin: 55px auto 5px;
+.pets__text-container{
+    display: flex;
+    flex-direction: column;
 }
 
-.inner-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 69px auto;
-  height: 835px;
-  width: 1160px;
-  border-radius: 20px;
-  background-color: #FDFDFF;
+.pets__card-name{
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
 }
 
-.widjets-container {
-  margin: 39px auto 0;
-  width: 760px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
+.pets__card-location{
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
 }
 
-.widjet {
-  width: 168px;
-  height: 244px;
+.pets__food-ico{
+    width: 33px;
+    height: 33px;
+    background-color: #E47209;
 }
 
-.widjet-inner-text {
-  margin-top: 25px;
+.pets__container{
+    height: 1110px;
+    position: relative;
 }
 
-.widjet-inner-block {
-  width: 168px;
-  height: 168px;
-  border-radius: 5px;
-  border: #FA6F32 solid 1px;
-  background-color: white;
+.button{
+    width: 298px;
+    height: 54px;
+    background-color: #E47209;
+    border: none;
+    border-radius: 25px;
+    margin: 60px auto 0;
 }
 
-.button2 {
-  display: flex;
-  justify-content: center;
-  width: 298px;
-  height: 54px;
-  background-color: #FE9013;
-  color: white;
-  border: 0;
-  margin: auto;
-  border-radius: 25px;
-  margin: auto;
+.button:hover {
+    background-color: #FA6F32;
 }
 
-.section5 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.button__text{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
 }
 
-.text-section5 {
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 46, 8px;
-  margin: auto;
-  margin-top: 140px;
+.pets-palm{
+    position: absolute;
+    left: -210px;
+    top: 650px;
 }
 
-.testimonials-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1160px;
-  margin: auto;
+.strelitzia{
+    position: absolute;
+    left: 1020px;
+    top: 835px;
 }
 
-.testimonials-box {
-  border: solid 1px red;
-  width: 268px;
-  height: 391px;
-  border-radius: 20px;
-  margin-top: 50px;
+.button-round__container{
+    position: absolute;
+    bottom: 640px;
+    left: -72px;
+    width: 1322px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer {
-  height: 443px;
-  background-color: black;
-}/*# sourceMappingURL=style.css.map */
+.button-round{
+    width: 62px;
+    height: 62px;
+    background-color: #FA6F32;
+    border: none;
+    border-radius: 40px;
+}
+
+.button-round:hover{
+    background-color: #E47209;
+}
+
+.pickAndFeed{
+    height: 1004px;
+    background-color: #FED290;
+    display: flex;
+}
+.pickAndFeed__inner{
+    width: 1160px;
+    height: 835px;
+    background-color: #FDFDFF;
+    border-radius: 20px;
+    margin-top: 69px;
+}
+
+.pickAndFeed__text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pickAndFeed__title{
+    font-size: 48px;
+    line-height: 120%;
+    color: #E47209;
+    margin: 41px 0 30px;
+}
+
+.pickAndFedd__transcription{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+.pickAndFeed__statement{
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0 0 40px;
+}
+
+.pickAndFeed__text-first{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 0 0 10px;
+}
+
+.pickAndFeed__text-second{
+    font-size: 16px;
+    line-height: 130%;
+    margin: 0;
+}
+
+.pickAndFeed__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__howItWorks{
+    font-size: 36px;
+    line-height: 130%;
+    margin: 60px 0 40px;
+}
+
+.info__card-container{
+    display: flex;
+    width: 760px;
+    justify-content: space-between;
+}
+
+.info__card{
+
+}
+
+.info__picture{
+    width: 168px;
+    height: 168px;
+    background-color: white;
+    border: #E47209 solid 2px;
+    border-radius: 5px;
+
+}
+
+.info__picture-ico{
+
+}
+
+.info__text{
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 30px;
+}
+
+.ingo__arrow{
+
+}
